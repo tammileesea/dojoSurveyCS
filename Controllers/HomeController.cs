@@ -9,11 +9,11 @@ namespace dojoSurvey{
 
         [HttpPost("result")]
         public IActionResult Result(string NameField, string LocationField, string LanguageField, string CommentField){
-            System.Console.WriteLine(NameField);
-            string Name = NameField;
-            string Location = LocationField;
-            string Language = LanguageField;
-            string Comment = CommentField;
+            System.Console.WriteLine(CommentField);
+            ViewBag.Name = NameField;
+            ViewBag.Location = LocationField;
+            ViewBag.Language = LanguageField;
+            ViewBag.Comment = CommentField;
             return View();
         }
     }
