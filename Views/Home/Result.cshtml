@@ -1,39 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="~/css/style.css">
-    <title>Survey Results</title>
-</head>
-<body>
-    <div>
-        <h1>Submitted Info</h1>
-        <table>
-            <tr>
-                <td>Name:</td>
-                <td>@ViewBag.Name</td>
-            </tr>
-            <tr>
-                <td>Dojo Location:</td>
-                <td>@ViewBag.Location</td>
-            </tr>
-            <tr>
-                <td>Favorite Language:</td>
-                <td>@ViewBag.Language</td>
-            </tr>
-            <tr>
-                <td>Comment:</td>
-                @{
-                    if (@ViewBag.Comment == null){
-                        <td>There was no comment</td>
-                    } else {
-                        <td>@ViewBag.Comment</td>
-                    }
+@model dojoSurvey.Models.Dojo
+
+<div>
+    <h1>Submitted Info</h1>
+    <table>
+        <tr>
+            <td>Name:</td>
+            <td>@Model.Name</td>
+        </tr>
+        <tr>
+            <td>Dojo Location:</td>
+            <td>@Model.Location</td>
+        </tr>
+        <tr>
+            <td>Favorite Language:</td>
+            <td>@Model.Language</td>
+        </tr>
+        <tr>
+            <td>Comment:</td>
+            @{
+                if (@Model.Comment == null){
+                    <td>There was no comment</td>
+                } else {
+                    <td>@Model.Comment</td>
                 }
-            </tr>
-        </table>
-    </div>
-</body>
-</html>
+            }
+        </tr>
+    </table>
+</div>

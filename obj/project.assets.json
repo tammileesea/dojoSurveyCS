@@ -12077,11 +12077,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/tammilee/Desktop/codingDojo/csharp/aspDotNet/dojoSurvey/dojoSurvey.csproj",
+      "projectUniqueName": "/Users/tammilee/Desktop/codingDojo/csharp/MvcI/dojoSurvey/dojoSurvey.csproj",
       "projectName": "dojoSurvey",
-      "projectPath": "/Users/tammilee/Desktop/codingDojo/csharp/aspDotNet/dojoSurvey/dojoSurvey.csproj",
+      "projectPath": "/Users/tammilee/Desktop/codingDojo/csharp/MvcI/dojoSurvey/dojoSurvey.csproj",
       "packagesPath": "/Users/tammilee/.nuget/packages/",
-      "outputPath": "/Users/tammilee/Desktop/codingDojo/csharp/aspDotNet/dojoSurvey/obj/",
+      "outputPath": "/Users/tammilee/Desktop/codingDojo/csharp/MvcI/dojoSurvey/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

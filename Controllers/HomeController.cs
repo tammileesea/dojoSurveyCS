@@ -1,3 +1,11 @@
+using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
+using dojoSurvey.Models;
+
 using Microsoft.AspNetCore.Mvc;
 
 namespace dojoSurvey{
@@ -8,13 +16,9 @@ namespace dojoSurvey{
         }
 
         [HttpPost("result")]
-        public IActionResult Result(string NameField, string LocationField, string LanguageField, string CommentField){
-            System.Console.WriteLine(CommentField);
-            ViewBag.Name = NameField;
-            ViewBag.Location = LocationField;
-            ViewBag.Language = LanguageField;
-            ViewBag.Comment = CommentField;
-            return View();
+        public IActionResult Result(Dojo newUser){
+            System.Console.WriteLine(newUser.Name);
+            return View("Result", newUser);
         }
     }
 }
