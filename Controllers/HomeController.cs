@@ -6,19 +6,20 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using dojoSurvey.Models;
 
-using Microsoft.AspNetCore.Mvc;
-
-namespace dojoSurvey{
+namespace dojoSurvey.Controllers{
     public class HomeController : Controller {
         [HttpGet("")]
-        public ViewResult Index(){
+        public IActionResult Index(){
             return View();
         }
 
         [HttpPost("result")]
         public IActionResult Result(Dojo newUser){
-            System.Console.WriteLine(newUser.Name);
-            return View("Result", newUser);
+            if (ModelState.IsValid){
+                return View("Result", newUser);
+            } else {
+                return View("Index");
+            }
         }
     }
 }

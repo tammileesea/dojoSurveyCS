@@ -46,3 +46,4 @@
 /Users/tammilee/Desktop/codingDojo/csharp/MvcI/dojoSurvey/obj/Debug/netcoreapp2.2/dojoSurvey.RazorTargetAssemblyInfo.cs
 /Users/tammilee/Desktop/codingDojo/csharp/MvcI/dojoSurvey/obj/Debug/netcoreapp2.2/dojoSurvey.Views.pdb
 /Users/tammilee/Desktop/codingDojo/csharp/MvcI/dojoSurvey/obj/Debug/netcoreapp2.2/dojoSurvey.csproj.CopyComplete
+/Users/tammilee/Desktop/codingDojo/csharp/MvcI/dojoSurvey/obj/Debug/netcoreapp2.2/Razor/Views/_ViewImports.g.cshtml.cs

@@ -1,29 +1,12 @@
 @model dojoSurvey.Models.Dojo
 
 <div>
-    <h1>Submitted Info</h1>
-    <table>
-        <tr>
-            <td>Name:</td>
-            <td>@Model.Name</td>
-        </tr>
-        <tr>
-            <td>Dojo Location:</td>
-            <td>@Model.Location</td>
-        </tr>
-        <tr>
-            <td>Favorite Language:</td>
-            <td>@Model.Language</td>
-        </tr>
-        <tr>
-            <td>Comment:</td>
-            @{
-                if (@Model.Comment == null){
-                    <td>There was no comment</td>
-                } else {
-                    <td>@Model.Comment</td>
-                }
-            }
-        </tr>
-    </table>
+    <p>Name: @Model.Name</p>
+    <p>Favorite Location: @Model.Location</p>
+    <p>Favorite Language: @Model.Language</p>
+    @if (@Model.Comment == null){
+        <p>No comment was provided</p>
+    } else {
+        <p>Comment: @Model.Comment</p>
+    }
 </div>
